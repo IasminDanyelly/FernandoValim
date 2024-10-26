@@ -3,7 +3,7 @@ import Logo from '../../assets/logoFernandoValim-removebg-pronta.png'
 export const Header = () => {
   return (
      <header className="bg-[#1b1b38] text-[#f6f6f6] w-full max-w-[90%] sm:max-w-[80%] m-auto my-10 items-center justify-between flex h-[80px] z-20 rounded-lg">
-        <div className='flex w-full row-auto items-center px-2 sm:px-6 md:px-8 lg:px-12 xl:px-16'> 
+        <div className='flex w-full row-auto items-center px-2 sm:px-6 md:px-8 lg:px-12 xl:px-16 '> 
            <img src={Logo} className='w-20'/>
    
         </div>

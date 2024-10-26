@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage:{
-      'parallax': 'url("src/assets/fotoBannerFernando.jpg")',
+      'parallax': 'url("src/assets/fotoBannerFernando.webp")',
      
     }
     },
