@@ -6,7 +6,7 @@ export const Home = () => {
   return (
   
     <div 
-    className="flex bg-cover bg-fixed 
+      className="flex bg-cover bg-fixed 
       h-[60vh]
       sm:h-[100vh] 
       md:h-[60vh] 
