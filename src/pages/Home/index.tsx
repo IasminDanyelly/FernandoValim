@@ -6,17 +6,15 @@ export const Home = () => {
   return (
   
     <div 
-      className="flex bg-cover bg-fixed 
-      h-[60vh]
-      sm:h-[100vh] 
-      md:h-[60vh] 
-      lg:h-[80vh] 
-      xl:h-[100vh] 
+      className="flex bg-cover bg-fixed bg-parallax
+      h-[100vh]
+      home
+  
       items-center 
       object-cover 
       flex-col 
       bg-left-top" 
-      style={{ backgroundImage: `url("src/assets/fotoBannerFernando.jpg")` }}
+      
     >
       <Header/>
       <Banner/>

@@ -176,6 +176,10 @@ span{
     .iconsRedes{
         margin: 0.5em 0 1.5em 0;
     }
+    .home, .opacityBanner{
+        height: 70vh;
+    }
+
 }
 
 @media screen and (max-width: 320px){
