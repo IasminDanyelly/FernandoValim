@@ -1,11 +1,12 @@
-import React from "react";
 
 
-export const Banner: React.FC<React.PropsWithChildren<{}>> = ({children}) => {
+export const Banner = () => {
  return (
     <>
-     <div className="flex items-center justify-center h-full w-full bg-fixed bg-cover bg-parallax  absolute top-0 left-0 z-[-1] ">
-          {children}
+    <div className="absolute bg-[rgba(0,0,0,.7)] inset-0 opacity-50 z-10 "></div>
+     <div className=" flex flex-col relative text-white top-[10%] z-20 right-0 left-[16%] divBanner "> 
+        <h2 className="text-[5.5em] nomeCantorBanner"> Fernando Valim </h2>
+        <span className="text-[2.3em] spanBanner"> & Banda </span> 
      </div>
    </>
  );

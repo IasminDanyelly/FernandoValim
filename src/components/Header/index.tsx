@@ -1,34 +1,23 @@
-import { useState } from 'react';
-import { IoMenu } from "react-icons/io5";
-import { MdCancel } from "react-icons/md";
+import Logo from '../../assets/logoFernandoValim-removebg-pronta.png'
 
 export const Header = () => {
-  const [open, setOpen] = useState(false);
-
   return (
-     <header className="bg-[#202021] text-[#c4474f] w-full max-w-[70%] m-auto my-7 items-center justify-between flex h-[80px] z-10 ">
-        <div>
-          <h3 className="pl-10 text-xl">Logo</h3>
-        </div> 
-
-       <div className='flex items-center justify-center'>
-        <div className='md:hidden'>
-          <button onClick={() => setOpen(!open)} className="text-3xl mr-5" >
-            {open ? <MdCancel /> : <IoMenu /> }
-          </button>
+     <header className="bg-[#1b1b38] text-[#f6f6f6] w-full max-w-[90%] sm:max-w-[80%] m-auto my-10 items-center justify-between flex h-[80px] z-20 rounded-lg">
+        <div className='flex w-full row-auto items-center px-2 sm:px-6 md:px-8 lg:px-12 xl:px-16'> 
+           <img src={Logo} className='w-20'/>
+   
         </div>
-
-        <nav className={`transition-all duration-800  ${open ? "bg-[#821d1d] py-3 px-8 flex items-center justify-start" : ""} ` }>
-          <ul className={` md:flex flex-col md:flex-row text-xl cursor-pointer 
-            ${open ? "block" : "hidden mr-10"} md:block text-justify md:gap-10 flex flex-col  `}>
-            <a className="hover:text-[#821d1d] transition-all duration-300 my-2" href='/'>Home</a>
-            <a className="text-white hover:text-[#8f8d8d] transition-all duration-300 my-2" href='/about'>About</a>
-            <a className="text-white hover:text-[#8f8d8d] transition-all duration-300 my-2" href='/contact'>Contact</a>
-            <a className="text-white hover:text-[#8f8d8d] transition-all duration-300 my-2" href='/cards'>Shows</a>
-          </ul>
-        </nav>
-      </div>   
-  
+      
+     
+        <nav className='transition-all duration-800 mr-16 header '>
+           <ul className='flex text-[1.3rem] cursor-pointer text-justify gap-12 mx-2  '>
+            <a className="hover:text-[#821d1d] transition-all duration-300 " href='/'>Home</a>
+            <a className="text-white hover:text-[#8f8d8d] transition-all duration-300 " href='/about'>Shows</a>
+            <a className="text-white hover:text-[#8f8d8d] transition-all duration-300 " href='/contact'>Sobre</a>
+            <a className="text-white hover:text-[#8f8d8d] transition-all duration-300 " href="https://wa.me/48998022432?text=Olá, tudo bem? Tenho interesse em contratar a banda!" target='_blank'>Contato</a>
+           </ul>
+         </nav>
+        
      </header>
      
  );
