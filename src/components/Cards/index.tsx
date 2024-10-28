@@ -27,6 +27,7 @@ export const Cards = () => {
           setSizeCards(4)
         }
     }
+    
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize)
