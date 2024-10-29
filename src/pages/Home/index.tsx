@@ -6,7 +6,7 @@ export const Home = () => {
   return (
     <div 
       className="flex bg-cover bg-fixed flex-col  items-center object-cover home h-[100vh]" 
-      style={{ background: '#4f43cc' }}
+      style={{ backgroundImage: `url("https://instagram.fccm11-1.fna.fbcdn.net/v/t51.293…iBWnc3TbDgiAi_AWW7iEvw&oe=672697BB&_nc_sid=7a9f4b")` }}
     >
       <Header/>
       <Banner/>

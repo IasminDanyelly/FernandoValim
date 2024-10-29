@@ -16,10 +16,10 @@ import Video2 from '../../assets/Video2.mp4'
 import Video3 from '../../assets/Video3.mp4'
 
 export const About = () => {
-  const [fade, setFade] = useState(true)
-  const [imageIndex, setImageIndex] = useState(0)
+  const [fade, setFade] = useState(true);
+  const [imageIndex, setImageIndex] = useState(0);
   const images = [ImgDemo1, ImgDemo2, ImgDemo3, ImgDemo4, ImgDemo5, ImgDemo6];
-  const [readMore, setReadMore] = useState(false)
+  const [readMore, setReadMore] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -43,7 +43,7 @@ export const About = () => {
     <div className="w-full max-w-[70%] sm:max-w-[80%] flex flex-row justify-center gap-10 mt-10 "> 
       
       <section className="max-w-[30%] flex flex-col text-justify gap-5 sobre">
-        <h3 className="text-3xl border-b-2 border-[#c4474f] text-gray-900 sobre" style={{fontFamily: "Poppins"}}> Sobre mim </h3>
+        <h3 className="text-2xl border-b-2 border-[#c4474f] text-gray-900 sobre" style={{fontFamily: "Poppins"}}> Sobre mim </h3>
 
         <span className='text-[21px]'style={{fontFamily:"Poppins"}} >
           Com um timbre marcante e uma presença de palco vibrante, Fernando Valim está dando os primeiros passos no sertanejo ao lado de sua banda,
@@ -53,7 +53,7 @@ export const About = () => {
         <br/><br/>
         
          {readMore ? (
-          <>  
+         <>  
          Fernando Valim já marcou presença em eventos inesquecíveis, levando sua energia contagiante a festas como a <strong className='text-[#c4474f]'>  OktoberFest </strong>, 
          a tradicional  <strong className='text-[#c4474f]'> Polvilhana </strong>  e a vibrante <strong className='text-[#c4474f]'>  Perkins </strong>.
          Cada show é uma nova oportunidade de Fernando e sua banda compartilharem momentos únicos com o público
