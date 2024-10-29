@@ -31,10 +31,11 @@ export const About = () => {
     }, 3000)
 
     return () => clearInterval(interval)
-  }, [images.length])
+  }, [images.length]);
  
- return (
+  return (
    <div className="bg-gray-200 flex justify-center items-center py-20 flex-col" >
+
       <h1 className='text-[#a83840]  text-center h1About '>
         Mais que notas, cada canção é uma parte de mim. 
         Venha conhecer a alma por trás da música.
@@ -52,27 +53,25 @@ export const About = () => {
         
         <br/><br/>
         
-         {readMore ? (
+        {readMore ? (
          <>  
          Fernando Valim já marcou presença em eventos inesquecíveis, levando sua energia contagiante a festas como a <strong className='text-[#c4474f]'>  OktoberFest </strong>, 
-         a tradicional  <strong className='text-[#c4474f]'> Polvilhana </strong>  e a vibrante <strong className='text-[#c4474f]'>  Perkins </strong>.
+         a tradicional  <strong className='text-[#c4474f]'> Polvilhana </strong> e a vibrante <strong className='text-[#c4474f]'>  Perkins </strong>.
          Cada show é uma nova oportunidade de Fernando e sua banda compartilharem momentos únicos com o público
          </>
         ): ''}
-      
-
+    
         </span>
        
-        
         <button 
         onClick={() => setReadMore(!readMore)} 
-        className='relative left-0 border-2 border-[#b1424a] text-[#b1424a] w-44 py-2 mt-1 hover:border-[#8b343c] hover:text-[#8b343c] transition-all duration-300 text-[20px] text-center buttonMore '>
-          Leia mais...
+        className='relative left-0 border-2 border-[#b1424a] text-[#b1424a] w-44 py-2 mt-1 hover:border-[#8b343c] hover:text-[#8b343c] transition-all duration-300 text-[18px] text-center buttonMore '>
+          {readMore ? 'Leia menos...' : 'Leia mais...'}
         </button> 
       </section>
 
       <ul className='max-w-[50%] mx-10 events'>
-        <h3 className="text-3xl border-b-2 border-[#c4474f] text-gray-900" style={{fontFamily:"Poppins"}}>Eventos</h3>
+        <h3 className="text-2xl border-b-2 border-[#c4474f] text-gray-900" style={{fontFamily:"Poppins"}}>Eventos</h3>
 
         <li className=' relative group ' > 
           <img src={Event1} className='w-44 h-44 object-cover mt-5'/> 
@@ -101,7 +100,6 @@ export const About = () => {
       </section>
 
     </div>
-
 
 
     <ul className="flex flex-col  md:flex-row items-center justify-center w-full mx-10 gap-6 events mt-24 py-20 videos">

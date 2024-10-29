@@ -26,7 +26,7 @@ span{
 }
 
 .buttonMore{
-    font-family: Merriweather, sans;
+    font-family: Merriweather, sans-serif;
 }
 
 .events{
@@ -36,7 +36,6 @@ span{
 .signature{
     font-family: "Satisfy", cursive;
     font-weight: 400;
-
 }
 
 .descriptionContact, .rightReserved{
@@ -117,7 +116,11 @@ span{
     .spanBanner{
         font-size: 1.5em;
     }
-   
+    .videos{ 
+        display: grid;
+        grid-template-columns: auto;
+
+    }
 }
 
 @media screen and (max-width: 640px){
@@ -137,7 +140,6 @@ span{
     .home, .opacityBanner{
         height: 70vh;
     }
-
  
 }
 

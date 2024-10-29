@@ -10,7 +10,7 @@ export const Contact = () => {
       <div className="flex flex-row mt-5 gap-6 iconsRedes">
        <a href='https://www.instagram.com/fernandovalimcantor/' target="_blank"><FaInstagram  className="text-[rgba(0,0,0,.6)] hover:text-[rgba(0,0,0,.8)] transition-all duration-300 cursor-pointer" size={32}/></a>
        <a href="https://www.facebook.com/profile.php?id=100005381290373&locale=pt_BR" target="_blank"><FaSquareFacebook className="text-[rgba(0,0,0,.6)] hover:text-[rgba(0,0,0,.8)] transition-all duration-300 cursor-pointer" size={32}/> </a>
-       <a href="" target="_blank"> <FaWhatsapp className="text-[rgba(0,0,0,.6)]  hover:text-[rgba(0,0,0,.8)] transition-all duration-300 cursor-pointer" size={32}/> </a>
+       <a href="https://wa.me/554898022432?text=Olá%20Fernando,%20gostaria%20de%20saber%20mais%20sobre%20os%20shows!" target="_blank"> <FaWhatsapp className="text-[rgba(0,0,0,.6)]  hover:text-[rgba(0,0,0,.8)] transition-all duration-300 cursor-pointer" size={32}/> </a>
       </div>
       
     <span className="text-xl text-gray-700 descriptionContact my-16 text-center spanContact ">Quer saber mais sobre os próximos shows, parcerias ou eventos? Entre em contato e faça parte dessa jornada musical!</span>

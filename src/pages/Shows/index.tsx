@@ -3,7 +3,7 @@ import { Cards } from "../../components/Cards"
 export const Shows = () => {
     return(
         <div className=" flex justify-center flex-col bg-[#202021] gap-8">   
-            <h1 className='relative left-[12%] text-white mt-8' style={{fontFamily: "Poppins"}}>Meus shows</h1>
+            <h1 className='relative left-[12%] text-[2em] text-white mt-8' style={{fontFamily: "Poppins"}}>Meus shows</h1>
             <Cards/>
 
            <a href="https://www.instagram.com/fernandovalimcantor/"> 
