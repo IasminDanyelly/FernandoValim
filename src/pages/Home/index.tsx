@@ -1,6 +1,6 @@
 import { Banner } from "../../components/Banner";
 import { Header } from "../../components/Header";
-import BgImage from '../../assets/fotoFernando.jpg'
+import BgImage from '../../assets/fotoBannerFernando.webp'
 
 export const Home = () => {
   return (
