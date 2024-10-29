@@ -102,7 +102,9 @@ export const About = () => {
 
     </div>
 
-    <ul className="flex flex-col md:flex-row items-center justify-center w-full mx-10 gap-6 events mt-24">
+
+
+    <ul className="flex flex-col  md:flex-row items-center justify-center w-full mx-10 gap-6 events mt-24 py-20 videos">
     <li className="w-full sm:w-[20rem] md:w-[24rem] lg:w-[26rem] xl:w-[28rem] rounded-lg"> 
         <video controls className="h-72 sm:h-80 md:h-80 lg:h-96 object-cover w-full rounded-lg">
             <source src={Video1} className='rounded-lg'/>
@@ -120,7 +122,7 @@ export const About = () => {
             <source src={Video3} className='rounded-lg'/>
         </video>
     </li>
-</ul>
+   </ul>
    </div>
  );
 };

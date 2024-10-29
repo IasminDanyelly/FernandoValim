@@ -76,7 +76,6 @@ span{
     .spanContact{
         margin: 0 2em 1em 2em;
         margin-top: 2.5rem;
-
     }
     .sobre{
         max-width: 50%;
@@ -90,6 +89,7 @@ span{
     .spanBanner{
         font-size: 1.5em;
     }
+    
 }
 
 
@@ -117,6 +117,7 @@ span{
     .spanBanner{
         font-size: 1.5em;
     }
+   
 }
 
 @media screen and (max-width: 640px){
