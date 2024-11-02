@@ -17,7 +17,7 @@ export const Cards = () => {
 
   useEffect(() => {
     const handleResize = () => {
-        if(window.innerWidth <= 480){
+        if(window.innerWidth <= 500){
           setSizeCards(1)
         }else if(window.innerWidth <= 640){
           setSizeCards(2)
