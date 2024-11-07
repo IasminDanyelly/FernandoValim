@@ -9,7 +9,7 @@ export const Header = () => {
       
         <nav className='transition-all duration-800 mr-16 header '>
            <ul className='flex text-[1.3rem] cursor-pointer text-justify gap-12 mx-5  '>
-            <a className="hover:text-[#821d1d] transition-all duration-300 " href='/'>Home</a>
+            <a className="hover:text-[#8f8d8d] transition-all duration-300 " href='/'>Home</a>
             <a className="text-white hover:text-[#8f8d8d] transition-all duration-300 " href='/about'>Shows</a>
             <a className="text-white hover:text-[#8f8d8d] transition-all duration-300 " href='/contact'>Sobre</a>
             <a className="text-white hover:text-[#8f8d8d] transition-all duration-300 " href="https://wa.me/48998022432?text=Olá,tudobem?Tenhointeresseemcontratarabanda!" target='_blank'>Contato</a>
