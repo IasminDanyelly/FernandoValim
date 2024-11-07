@@ -1,15 +1,16 @@
 import {useEffect, useState} from 'react'
 
-import Event1 from '../../assets/imagem-fernando1.jpg'
+import Event1 from '../../assets/imagem-fernando4.jpg'
 import Event2 from '../../assets/imagem-fernando2.jpg'
 import Event3 from '../../assets/imagem-fernando3.jpg'
 
-import ImgDemo1 from '../../assets/imagem-fernando4.jpg'
-import ImgDemo2 from '../../assets/imagem-fernando3.jpg'
-import ImgDemo3 from '../../assets/imagem-fernando2.jpg'
-import ImgDemo4 from '../../assets/imagem-fernando1.jpg'
-import ImgDemo5 from '../../assets/imagem-fernando5.jpg'
-import ImgDemo6 from '../../assets/imagem-fernando6.jpg'
+
+import ImgDemo1 from '../../assets/imagemAbout2.jpg'
+import ImgDemo2 from '../../assets/imagemAbout3.jpg'
+import ImgDemo3 from '../../assets/imagemAbout5.jpg'
+import ImgDemo4 from '../../assets/imagemAbout6.jpg'
+import ImgDemo5 from '../../assets/imagemAbout7.jpg'
+
 
 import Video1 from '../../assets/Video1.mp4'
 import Video2 from '../../assets/Video2.mp4'
@@ -18,7 +19,7 @@ import Video3 from '../../assets/Video3.mp4'
 export const About = () => {
   const [fade, setFade] = useState(true);
   const [imageIndex, setImageIndex] = useState(0);
-  const images = [ImgDemo1, ImgDemo2, ImgDemo3, ImgDemo4, ImgDemo5, ImgDemo6];
+  const images = [ImgDemo1, ImgDemo2, ImgDemo3, ImgDemo4, ImgDemo5, ];
   const [readMore, setReadMore] = useState(false);
 
   useEffect(() => {
@@ -27,8 +28,8 @@ export const About = () => {
       setTimeout(() => {
         setImageIndex((prevIndex) => (prevIndex + 1) % images.length);
         setFade(true);
-      }, 300)
-    }, 3000)
+      }, 200)
+    }, 4000)
 
     return () => clearInterval(interval)
   }, [images.length]);

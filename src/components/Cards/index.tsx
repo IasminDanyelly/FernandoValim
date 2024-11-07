@@ -1,70 +1,49 @@
-import {useState, useEffect} from 'react';
 
-import ImgCard1 from '../../assets/imagem-fernando2.jpg'
-import ImgCard2 from '../../assets/imagem-fernando4.jpg'
-import ImgCard3 from '../../assets/imagem-fernando5.jpg'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+
+
+import ImgCard1 from '../../assets/imagem-fernando4.jpg'
+import ImgCard2 from '../../assets/imagem-fernando5.jpg'
+import ImgCard3 from '../../assets/imagem-fernando6.jpg'
 import ImgCard4 from '../../assets/imagem-fernando6.jpg'
-import ImgCard5 from '../../assets/imagem-fernando1.jpg'
-import ImgCard6 from '../../assets/imagem-fernando3.jpg'
+import ImgCard5 from '../../assets/imagem-fernando7.jpg'
+import ImgCard6 from '../../assets/imagem-fernando8.jpg'
 
 export const Cards = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [sizeCards, setSizeCards] = useState(4)
- 
 
-  const images = [ ImgCard1, ImgCard2, ImgCard3, ImgCard4,ImgCard5, ImgCard6 ];
-  const totalImages = [...images, ...images];
-
-  useEffect(() => {
-    const handleResize = () => {
-        if(window.innerWidth <= 500){
-          setSizeCards(1)
-        }else if(window.innerWidth <= 640){
-          setSizeCards(2)
-        }else if(window.innerWidth <= 768){
-          setSizeCards(3)
-        }else{
-          setSizeCards(4)
-        }
-    }
-    
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
-
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % totalImages.length)
-    }, 3500);
-
-    return () => clearInterval(interval);
-  }, [totalImages.length]);
-
-
+  const images = [ ImgCard1, ImgCard2, ImgCard3, ImgCard4, ImgCard5, ImgCard6];
+  
   return (
-    <div 
-      className=' relative w-full mx-auto overflow-hidden '
-    >
-      
-    <div 
-      className='flex transition-transform duration-300 ease-linear w-full object-cover divCards'
-      style={{
-        transform: `translateX(-${(currentIndex / totalImages.length / sizeCards) * 100}%)`,
-        width: `${totalImages.length * (100 / sizeCards)}%`,  
+    <div>  
+      <Swiper 
+      navigation
+      pagination={{clickable: true}} 
+      modules={[Navigation, Pagination, Autoplay]} 
+      className="mySwiper object-cover flex items-center"
+      slidesPerView={4}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false
       }}
-    >
-      {totalImages.map((image, index) => (
-        <img 
-          key={index}
-          src={image}
-          alt={`Imagem ${index + 1}`}
-          className=' h-72 object-cover '
-          style={{width: `${100 / sizeCards}%`}}
-         />
-       ))}
-     </div>  
+
+      breakpoints={{
+        300: {slidesPerView: 1},
+        640: {slidesPerView: 2},
+        700: {slidesPerView: 2},
+        1000: {slidesPerView: 3},
+        1200: {slidesPerView: 4},
+      }}
+      >
+        {images.map((imgSrc, index ) => (
+          <SwiperSlide key={index} className='flex justify-center items-center'>
+             <img src={imgSrc} alt={`Slide ${index + 1}`} className='h-[50vh] object-cover '/>
+          </SwiperSlide>
+        ))}
+    
+      </Swiper>
    </div>
   );
 }

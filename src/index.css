@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 
+
+
 *{
     margin: 0;
     padding: 0;
@@ -176,6 +178,11 @@ span{
     }
     .iconsRedes{
         margin: 0.5em 0 1.5em 0;
+    }
+    .videos{ 
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0 2rem 0 2rem;
     }
 }
 
