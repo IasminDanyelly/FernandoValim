@@ -182,7 +182,7 @@ span{
     .videos{ 
         display: grid;
         grid-template-columns: auto;
-        margin: 0 2rem 0 2rem;
+        margin: 2rem;
     }
 }
 
@@ -192,5 +192,8 @@ span{
     }
     .spanBanner{
         font-size: 1em;
+    }
+    .videos{
+        margin: 2rem;
     }
 }

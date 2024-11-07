@@ -5,17 +5,18 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 
-import ImgCard1 from '../../assets/imagem-fernando4.jpg'
-import ImgCard2 from '../../assets/imagem-fernando5.jpg'
-import ImgCard3 from '../../assets/imagem-fernando6.jpg'
-import ImgCard4 from '../../assets/imagem-fernando6.jpg'
-import ImgCard5 from '../../assets/imagem-fernando7.jpg'
-import ImgCard6 from '../../assets/imagem-fernando8.jpg'
+import ImgCard1 from '../../assets/imagem-fernando1.jpg'
+import ImgCard2 from '../../assets/imagem-fernando2.jpg'
+import ImgCard3 from '../../assets/imagem-fernando3.jpg'
+import ImgCard4 from '../../assets/imagem-fernando4.jpg'
+import ImgCard5 from '../../assets/imagem-fernando5.jpg'
+import ImgCard6 from '../../assets/imagem-fernando6.jpg'
+
 
 export const Cards = () => {
 
-  const images = [ ImgCard1, ImgCard2, ImgCard3, ImgCard4, ImgCard5, ImgCard6];
-  
+  const images = [ImgCard1, ImgCard2, ImgCard3, ImgCard4, ImgCard5, ImgCard6];
+
   return (
     <div>  
       <Swiper 
