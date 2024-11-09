@@ -36,13 +36,15 @@ span{
 }
 
 .signature{
-    font-family: "Satisfy", cursive;
+    font-family: sans-serif;
     font-weight: 400;
 }
 
 .descriptionContact, .rightReserved{
     font-family: "Quicksand", sans-serif;
 }
+
+
 
 .header {
     font-family: 'Montserrat';
@@ -64,6 +66,8 @@ span{
   font-size: 1.55rem;
   font-family: 'Poppins';
 }
+
+
 
 
 @media screen and (max-width: 1024px){
@@ -96,7 +100,7 @@ span{
 
 @media screen and (max-width: 768px){
     .logo{
-        display: none;
+      width: 4.75rem;
     }
     .header{
         margin: auto;
@@ -148,15 +152,19 @@ span{
 @media screen and (max-width: 480px){
     .logo{
         display: flex;
-        margin: auto;
-        left: 0;
+        width: 4rem;
+    
     }
     .header{
         display: none;
+        height: 70px;
     }
     .h1About {
-        font-size: 1.55rem;
+        font-size: 1.45rem;
         margin: 1.5rem;  
+    }
+    .sobre span{
+        font-size: 1.2rem;
     }
     .divBanner{
         left: 0;
@@ -167,11 +175,15 @@ span{
     .spanBanner{
         font-size: 1.1em;
     }
+    .shows{
+        font-size: 1.75rem;
+    }
     .sobre{
         max-width: 100%;
     }
     .events{
         display: none;
+        font-size:18px ;
     }
     .spanContact{
        display:none;
@@ -180,10 +192,13 @@ span{
         margin: 0.5em 0 1.5em 0;
     }
     .videos{ 
-        display: grid;
-        grid-template-columns: auto;
-        margin: 2rem;
+        width: 22rem;
     }
+    .rightReserved{
+        font-size:14px;
+        text-align: center;
+    }
+    
 }
 
 @media screen and (max-width: 320px){
@@ -194,6 +209,10 @@ span{
         font-size: 1em;
     }
     .videos{
-        margin: 2rem;
+        width: 18rem;
+    }
+    .rightReserved{
+        font-size:12px;
+        text-align: center;
     }
 }

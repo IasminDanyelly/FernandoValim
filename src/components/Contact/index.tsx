@@ -14,7 +14,8 @@ export const Contact = () => {
       </div>
       
     <span className="text-xl text-gray-700 descriptionContact my-16 text-center spanContact ">Quer saber mais sobre os próximos shows, parcerias ou eventos? Entre em contato e faça parte dessa jornada musical!</span>
-    <span className="border-t-2 border-gray-700 uppercase w-full flex justify-center items-center p-5 rightReserved">&copy; 2024 | Direitos Reservados</span>
+    <span className="border-t-2 border-gray-700 uppercase w-full flex justify-center items-center p-5 rightReserved text-[rgba(0,0,0,.7)]">&copy; 2024 | Direitos Reservados por Fernando Valim</span>
+    <span className="text-[18px] text-[rgba(0,0,0,.6)] font-sans mb-5 mt-4">Feito por UpStudio</span>
     
   </div>
  );

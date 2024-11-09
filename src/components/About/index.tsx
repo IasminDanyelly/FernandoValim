@@ -4,13 +4,11 @@ import Event1 from '../../assets/imagem-fernando4.jpg'
 import Event2 from '../../assets/imagem-fernando2.jpg'
 import Event3 from '../../assets/imagem-fernando3.jpg'
 
-
 import ImgDemo1 from '../../assets/imagemAbout2.jpg'
 import ImgDemo2 from '../../assets/imagemAbout3.jpg'
 import ImgDemo3 from '../../assets/imagemAbout5.jpg'
 import ImgDemo4 from '../../assets/imagemAbout6.jpg'
 import ImgDemo5 from '../../assets/imagemAbout7.jpg'
-
 
 import Video1 from '../../assets/Video1.mp4'
 import Video2 from '../../assets/Video2.mp4'
@@ -33,6 +31,7 @@ export const About = () => {
 
     return () => clearInterval(interval)
   }, [images.length]);
+  
  
   return (
    <div className="bg-gray-200 flex justify-center items-center py-20 flex-col" >
