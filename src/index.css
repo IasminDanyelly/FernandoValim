@@ -46,7 +46,7 @@ span{
 
 
 
-.header {
+.navHeader {
     font-family: 'Montserrat';
 }
 
@@ -102,7 +102,7 @@ span{
     .logo{
       width: 4.75rem;
     }
-    .header{
+    .navHeader{
         margin: auto;
         gap: 2rem;
     }
@@ -130,6 +130,7 @@ span{
 }
 
 @media screen and (max-width: 640px){
+    
     .spanContact{
         margin: 2em 2em 1em 2em;
         font-size: 1.2em;
@@ -150,12 +151,17 @@ span{
 }
 
 @media screen and (max-width: 480px){
+    .header{
+        background:none;
+        margin:1rem;
+    }
     .logo{
         display: flex;
-        width: 4rem;
+        margin: auto;
+        margin-top:15px ;
     
     }
-    .header{
+    .navHeader{
         display: none;
         height: 70px;
     }

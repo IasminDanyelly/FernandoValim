@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export const Contact = () => {
  return (
-   <div className="bg-gradient-to-t to-gray-300 from-gray-200 flex justify-center items-center flex-col  ">
+   <div className="bg-gradient-to-t to-gray-300 from-gray-200 flex justify-center items-center flex-col contactComponent ">
       <h3 className="text-[2em] text-gray-500 my-12 signature ">Fernando Valim</h3>
 
       <div className="flex flex-row my-2 gap-6 iconsRedes">

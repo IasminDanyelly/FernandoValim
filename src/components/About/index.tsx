@@ -1,4 +1,5 @@
-import {useEffect, useState} from 'react'
+import {useEffect, useState} from 'react';
+
 
 import Event1 from '../../assets/imagem-fernando4.jpg'
 import Event2 from '../../assets/imagem-fernando2.jpg'
@@ -34,9 +35,9 @@ export const About = () => {
   
  
   return (
-   <div className="bg-gray-200 flex justify-center items-center py-20 flex-col" >
-
-      <h1 className='text-[#a83840]  text-center h1About '>
+   <div className="bg-gray-200 flex justify-center items-center py-20 flex-col aboutComponent" >
+     
+      <h1 className='text-[#a83840] text-center h1About '>
         Mais que notas, cada canção é uma parte de mim. 
         Venha conhecer a alma por trás da música.
       </h1>

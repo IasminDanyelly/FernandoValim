@@ -8,10 +8,12 @@ import { Shows } from '../pages/Shows';
 export default function Routes(){
     return(
         <div>
+
          <Home/>
          <Shows/>
          <About/>
          <Contact/>
+         
         </div>
     )
 };

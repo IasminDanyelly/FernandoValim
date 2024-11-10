@@ -18,7 +18,9 @@ export const Cards = () => {
   const images = [ImgCard1, ImgCard2, ImgCard3, ImgCard4, ImgCard5, ImgCard6];
 
   return (
+    
     <div>  
+      
       <Swiper 
       navigation
       pagination={{clickable: true}} 
