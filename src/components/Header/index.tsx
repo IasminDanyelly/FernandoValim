@@ -11,10 +11,18 @@ export const Header = () => {
       
         <nav className='transition-all duration-800 mr-16 navHeader '>
            <ul className='flex text-[1.3rem] cursor-pointer text-justify gap-12 mx-5  '>
+            <li> 
             <Link to="home" spy={true} smooth={true} offset={50} duration={500}  className="hover:text-[#8f8d8d] transition-all duration-300 " >Home</Link>
+            </li>
+            <li>
             <Link to="showsComponent" spy={true} smooth={true} offset={50} duration={500} className="text-white hover:text-[#8f8d8d] transition-all duration-300 ">Shows</Link>
+            </li>
+            <li>
             <Link to="aboutComponent" spy={true} smooth={true} offset={50} duration={500} className="text-white hover:text-[#8f8d8d] transition-all duration-300 " >Sobre</Link>
+            </li>
+            <li>
             <Link to="contactComponent" spy={true} smooth={true} offset={50} duration={500} className="text-white hover:text-[#8f8d8d] transition-all duration-300 " >Contato</Link>
+            </li>
            </ul>
          </nav>
         
